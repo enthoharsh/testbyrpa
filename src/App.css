@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+::-webkit-scrollbar{
+  width: 5px;
+}
+
+::-webkit-scrollbar-track{
+  box-shadow: inset 0 0 6px rgba (0,0,0,0,0.3);
+  background: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar-thumb{
+  background: #3b3b3b;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  background: url("./background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+section > div {
+  width: 250px;
+  margin: 1.8rem;
+  padding: 1rem;
+  background: #ffffffb0;
+  border-radius: 9px;
+  height: auto;
+  backdrop-filter: blur(6px);
+  box-shadow: 3px 4px 8px 0px #00000040;
+}
+
+.heading {
+  width: 100%;
+  background: transparent;
+  backdrop-filter: blur(0);
+  box-shadow: 0px 0px 0px 0px #ffffff00;
+}
+
+.heading h1 {
+  font-size: 3.5rem;
+  letter-spacing: 8px;
+  text-transform: capitalize;
+  font-family: serif;
+  text-align: center;
+  color: white;
+  text-shadow: 3px 3px 6px #0f0f0f;
+}
+
+.listDiv {
+  width: 80%;
+  height: auto;
+  display: flex;
+  overflow: auto;
+  margin-top: 2rem;
+}
+
+.imgdiv {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.img {
+  width: 200px;
+}
+
+.movieCard h3,
+.movieCard p {
+  font-weight: 400;
+  color: #4a4a4a;
+}
+
+.movieCard:hover {
+  transform: scale(1.1);
+}
+
+.openBox {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  overflow: auto;
+  display: none;
+}
+
+.closebtn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  font-size: 2rem;
+  font-family: cursive;
+}
+
+.poster {
+  width: 30%;
+}
+
+.poster img {
+  width: 100%;
+}
+
+.detail {
+  width: 65%;
+  margin-left: 3.2rem;
+}
+
+.detail a {
+  background: red;
+  padding: 0.5rem 1rem;
+  position: relative;
+  top: 1rem;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.detail h2 {
+  text-align: center;
+  font-family: serif;
+  font-size: 2rem;
+  margin-top: 1rem;
+  color: #625e58;
+}
+
+.castDet{
+  width: 100%;
+  height: 60%;
+  overflow: auto;
+}
+
+.castDet div{
+  background: white;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 15px;
+  display:flex;
+  justify-content: space-around;
+}
+
+.actor{
+  font-size: 1.5rem !important;
+    color: white !important;
+    text-shadow: 1px 0px 3px black;
+}
